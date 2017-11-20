@@ -15,6 +15,9 @@
 
 	<script src='https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/js/reveal.min.js'></script>
 	<script>
+		window.onChanged = function(e) {
+			// TODO: change slide theme console.log(e.value);
+		};
 		Reveal.initialize();
 	</script>
 </body>

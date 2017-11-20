@@ -25,7 +25,7 @@ Points for slide three
 		</div>
 
 		<div>
-			<select name="theme">
+			<select name="theme" onchange="onChanged(this)">
 				<option>league</option>
 				<option selected>beige</option>
 				<option>black</option>
@@ -66,9 +66,12 @@ Points for slide three
 	<p>Any other url will set the slide to have an iframe background</p>
 </section>
 
-
 <section class="docs">
 	<h3>More on sharing</h3>
 	<p>You can use relative urls for assets linked in your slides if those assets are hosted in the same folder as your deck file.</p>
 	<p>This is useful for preparing an offline presentation and later moving it online.</p>
+</section>
+
+<section class="docs">
+	<p>Fork me on <a href="https://github.com/JannieT/deckserver" target="_blank">Github</a></p>
 </section>

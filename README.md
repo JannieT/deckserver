@@ -4,7 +4,7 @@ An app to serve a Markdown file as a slide deck in your browser. [Check out the 
 
 ### What it does
 
-So you might have some notes on a topic like this:
+You might have some notes on a topic in markdown. This can become your slide deck for a talk by simply chopping the content up in screen-sized chunks, like this:
 
 ```
 # Cambodia
@@ -28,13 +28,13 @@ So you might have some notes on a topic like this:
 
 ```
 
-This can become your slide deck for a talk by simply feeding the note to this app. You can either paste the notes into the app or host your deck file on the internet. 
+and feeding the note to Deck Server. You can either paste the notes into the app or host your deck file on the internet. 
 
 Here is a running instance of the app which also has more detailed usage instructions: [http://kyk.kiekies.net](http://kyk.kiekies.net)
 
 ### Installation
 
-To install the Deck Server locally, clone the repository and install the vendor dependencies:
+To install Deck Server locally, clone the repository and install the vendor dependencies:
 
 ```
 composer install
