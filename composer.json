@@ -1,6 +1,6 @@
 {
-    "name": "jannie/deck",
-    "description": "slide deck hosting",
+    "name": "janniet/deckserver",
+    "description": "slide deck player",
     "type": "project",
     "license": "MIT",
     "authors": [
