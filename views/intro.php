@@ -26,17 +26,17 @@ Points for slide three
 
 		<div>
 			<select name="theme" onchange="onChanged(this)">
-				<option>league</option>
-				<option selected>beige</option>
-				<option>black</option>
-				<option>blood</option>
-				<option>moon</option>
-				<option>night</option>
-				<option>serif</option>
-				<option>simple</option>
-				<option>sky</option>
-				<option>solarized</option>
-				<option>white</option>
+				<option data-hue="#42affa">league</option>
+				<option data-hue="#c0a86e">beige</option>
+				<option data-hue="#42affa">black</option>
+				<option data-hue="#a23">blood</option>
+				<option data-hue="#268bd2">moon</option>
+				<option data-hue="#e7ad52">night</option>
+				<option data-hue="#51483D">serif</option>
+				<option data-hue="#00008B">simple</option>
+				<option data-hue="#3b759e">sky</option>
+				<option data-hue="#268bd2">solarized</option>
+				<option data-hue="#2a76dd">white</option>
 			</select>
 			<input type="submit" name="submit" value="Show" />
 		</div>
@@ -75,3 +75,33 @@ Points for slide three
 <section class="docs">
 	<p>Fork me on <a href="https://github.com/JannieT/deckserver" target="_blank">Github</a></p>
 </section>
+
+<script>
+	(function(document, window) {
+		
+		var setTheme = function(theme, hue) {
+			var themeLink = 'https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/css/theme/' + theme + '.css';
+			document.getElementById('theme').setAttribute('href', themeLink);
+
+
+			var frame = document.querySelector('div.fake-area');
+			frame.style['box-shadow'] = '0px 0px 12px 0px ' + hue;
+
+			var dropdown = document.querySelector('select');
+			dropdown.style['color'] = hue;
+			dropdown.style['border-color'] = hue;
+
+			var button = document.querySelector('input');
+			button.style['color'] = hue;
+			button.style['border-color'] = hue;
+
+		}
+
+		window.onChanged = function(e) {
+			setTheme(e.value, e.selectedOptions[0].dataset.hue);
+		};
+
+		setTheme('league', '#42affa');
+
+	})(document, window);
+</script>

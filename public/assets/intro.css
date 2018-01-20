@@ -20,7 +20,7 @@ section div.fake-area {
     padding: 20px;
     border: 1px solid #333;
     border-radius: 3px;
-    box-shadow: 0px 0px 12px 0px #42affa;
+    box-shadow: 0px 0px 12px 0px;
     margin: 20px 0;
 }
 
@@ -59,7 +59,7 @@ section select {
 	box-sizing: inherit;
 }
 
-section input[type='submit'] {
+section input {
 	font-size: 18px;
     color: #42affa;
     padding: 8px;
@@ -71,7 +71,9 @@ section input[type='submit'] {
     float: right;
 }
 
+
 .reveal .controls .navigate-down, 
 .reveal .controls .navigate-up {
     display: none;
 }
+
