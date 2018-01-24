@@ -43,7 +43,6 @@ section select {
     display: block;
 	float: left;
     min-width: 150px;
-    height: 3rem;
     color: #42affa;
     background-color: transparent;
     border: 1px solid #42affa;
@@ -51,7 +50,7 @@ section select {
     padding: .5rem .75rem;
     font-size: 1rem;
     line-height: 1.25;
-
+    height: 40px;
     background-clip: padding-box;
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     background-image: none;
@@ -68,6 +67,7 @@ section input {
     background-color: transparent;
     cursor: pointer;
     min-width: 150px;
+    height: 40px;
     float: right;
 }
 

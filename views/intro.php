@@ -26,7 +26,7 @@ Points for slide three
 
 		<div>
 			<select name="theme" onchange="onChanged(this)">
-				<option data-hue="#42affa">league</option>
+				<option data-hue="#42affa" selected>league</option>
 				<option data-hue="#c0a86e">beige</option>
 				<option data-hue="#42affa">black</option>
 				<option data-hue="#a23">blood</option>
@@ -78,6 +78,7 @@ Points for slide three
 
 <script>
 	(function(document, window) {
+
 		
 		var setTheme = function(theme, hue) {
 			var themeLink = 'https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/css/theme/' + theme + '.css';
