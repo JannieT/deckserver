@@ -58,14 +58,22 @@ EOS;
 
     }
 
-	/** @test */
+    /** @test */
     public function it_does_slides()
     {
-    	$deck = new Deck("one\n\n------\n\ntwo");
+        $deck = new Deck("one\n\n------\n\ntwo");
         $expected = <<<EOS
 <section><p>one</p></section>
 <section><p>two</p></section>
 EOS;
+        $this->assertSame($expected, $deck->parsed());
+    }
+
+	/** test */
+    public function it_can_handle_an_attack()
+    {
+    	$deck = new Deck("#test <?php echo 'All your things are belong to us'; ?><p onclick='http://schemez.ru'>CLICK ME!</p>");
+        $expected = "<section><h1>test CLICK ME!</h1></section>";
     	$this->assertSame($expected, $deck->parsed());
     }
 }

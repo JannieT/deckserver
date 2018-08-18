@@ -23,5 +23,8 @@
     "autoload-dev": {
         "classmap": [
         ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
     }
 }
