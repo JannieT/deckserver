@@ -2,8 +2,6 @@
 
 namespace App;
 
-use \cebe\markdown\Markdown;
-
 class Deck 
 {
 
@@ -24,12 +22,12 @@ class Deck
 
 	public function parsed()
 	{
-		$parser = new Markdown();
+		$parser = new SafeMarkdown();
 		$raw = $parser->parse($this->source);
 		$slides = array_map(function($content) {
 			$slide = new Slide($content, $this->path);
 			return $slide->render();
-		}, explode('<hr />', $raw));
+		}, explode('<hr>', $raw));
 
 		return implode("\n", $slides);
 	}
