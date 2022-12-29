@@ -1,0 +1,7 @@
+*
+!/app
+!/public
+!/vendor
+!/views
+!.dockerignore
+!Dockerfile
