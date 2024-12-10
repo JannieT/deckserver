@@ -1,3 +1,5 @@
+> This project is now just sample code and is not intended for production use. It is not actively maintained.
+
 # Deck Server
 
 An app to serve a Markdown file as a slide deck in your browser. [Check out the live demo](http://kyk.kiekies.net)
